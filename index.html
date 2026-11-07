@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DORA E MIRË – Një dorë ndihmë për ata që kanë nevojë.">
+  <title>DORA E MIRË | Bashkë bëjmë mirë</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #18372b;
+      background: #f8faf7;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 7%;
+      background: white;
+      border-bottom: 1px solid #e8eee8;
+    }
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+      color: #176b45;
+      letter-spacing: -1px;
+    }
+    .logo span { color: #c49a42; }
+    nav a {
+      color: #244737;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 85px 7%;
+      text-align: center;
+      background: linear-gradient(135deg, #e8f4eb, #fbf9ef);
+    }
+    .tag {
+      display: inline-block;
+      color: #176b45;
+      background: white;
+      padding: 7px 16px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 65px);
+      line-height: 1.12;
+      max-width: 850px;
+      margin: auto;
+      color: #164b34;
+    }
+    h1 span { color: #c49a42; }
+    .hero p {
+      max-width: 620px;
+      margin: 22px auto 30px;
+      color: #5c7064;
+      font-size: 17px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+    .primary { background: #176b45; color: white; }
+    .secondary { background: white; color: #176b45; border: 1px solid #dce8dd; }
+    section { padding: 65px 7%; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 { font-size: 31px; color: #164b34; }
+    .section-title p { color: #718076; margin-top: 8px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border: 1px solid #e8eee8;
+      border-radius: 15px;
+    }
+    .symbol { font-size: 30px; margin-bottom: 12px; }
+    .card h3 { color: #176b45; margin-bottom: 8px; }
+    .card p { color: #718076; font-size: 14px; }
+    .mission {
+      background: #164b34;
+      color: white;
+      text-align: center;
+    }
+    .mission h2 { font-size: 30px; margin-bottom: 15px; }
+    .mission p { max-width: 700px; margin: auto; color: #dcebe1; }
+    .steps {
+      max-width: 850px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .step {
+      background: white;
+      border-radius: 13px;
+      padding: 22px;
+      border: 1px solid #e8eee8;
+    }
+    .number {
+      color: #c49a42;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .step h3 { margin: 7px 0; color: #176b45; }
+    .step p { font-size: 14px; color: #718076; }
+    .cta {
+      text-align: center;
+      background: #f0f5ed;
+    }
+    .cta h2 { color: #164b34; font-size: 30px; }
+    .cta p { color: #718076; margin: 12px auto 22px; }
+    footer {
+      background: #102f23;
+      color: #dcebe1;
+      text-align: center;
+      padding: 28px 7%;
+      font-size: 13px;
+    }
+    footer strong { color: #e0bd70; }
+    @media (max-width: 600px) {
+      header { padding: 15px 5%; }
+      nav a { margin-left: 10px; font-size: 12px; }
+      .hero { padding: 65px 6%; }
+      section { padding: 50px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">DORA E <span>MIRË</span></div>
+  <nav>
+    <a href="#misioni">Misioni</a>
+    <a href="#si-funksionon">Si funksionon</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="tag">BASHKË PËR NJË TË ARDHME MË TË MIRË</div>
+    <h1>Një dorë e vogël, <span>një ndryshim i madh.</span></h1>
+    <p>
+      DORA E MIRË bashkon njerëzit që duan të ndihmojnë
+      me familjet dhe individët që kanë nevojë për mbështetje.
+      Sepse askush nuk duhet të përballet i vetëm me vështirësitë.
+    </p>
+    <a href="#si-funksionon" class="btn primary">Si mund të ndihmoj?</a>
+    <a href="#ndihma" class="btn secondary">Kam nevojë për ndihmë</a>
+  </div>
+
+  <section id="misioni">
+    <div class="section-title">
+      <h2>Ndihma që bën ndryshimin</h2>
+      <p>Mbështetje për nevojat më të rëndësishme të jetës.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="symbol">🏠</div>
+        <h3>Qiraja</h3>
+        <p>Ndihmë për familjet që rrezikojnë të mbesin pa strehim.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">💡</div>
+        <h3>Rryma dhe uji</h3>
+        <p>Mbështetje për pagesën e faturave themelore.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">❤️</div>
+        <h3>Shëndetësia</h3>
+        <p>Ndihmë për barna dhe shpenzime mjekësore.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">🛒</div>
+        <h3>Ushqimi</h3>
+        <p>Mbështetje për familjet që kanë nevojë për ushqim.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">📚</div>
+        <h3>Arsimi</h3>
+        <p>Mundësi më të mira për fëmijët dhe nxënësit.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">🤝</div>
+        <h3>Ndihmë tjetër</h3>
+        <p>Mbështetje për nevoja të tjera të rëndësishme.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <h2>Mirësia nuk njeh kufij.</h2>
+    <p>
+      Fillojmë në Kosovë, me synimin që DORA E MIRË
+      të bashkojë njerëz nga e gjithë bota.
+      Çdo ndihmë e sinqertë mund të ndryshojë një jetë.
+    </p>
+  </section>
+
+  <section id="si-funksionon">
+    <div class="section-title">
+      <h2>Si funksionon?</h2>
+      <p>Një proces i thjeshtë, me kujdes dhe transparencë.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="number">01</div>
+        <h3>Kërko ndihmë</h3>
+        <p>Personi paraqet nevojën dhe dokumentet përkatëse.</p>
+      </div>
+      <div class="step">
+        <div class="number">02</div>
+        <h3>Verifikimi</h3>
+        <p>Ekipi shqyrton kërkesën para se ajo të publikohet.</p>
+      </div>
+      <div class="step">
+        <div class="number">03</div>
+        <h3>Ndihmo</h3>
+        <p>Mbështetësit mund të kontribuojnë për nevojat e verifikuara.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="ndihma">
+    <h2>Së bashku mund të bëjmë më shumë.</h2>
+    <p>Çdo dorë e mirë ka rëndësi. Bëhu pjesë e ndryshimit.</p>
+    <a href="mailto:info@doraemire.org" class="btn primary">Na kontakto</a>
+  </section>
+</main>
+
+<footer>
+  <strong>DORA E MIRË</strong>
+  <p>Me zemër për njerëzit. Me shpresë për të ardhmen.</p>
+  <p>© 2026 DORA E MIRË. Të gjitha të drejtat e rezervuara.</p>
+</footer>
+
+</body>
+</html>
